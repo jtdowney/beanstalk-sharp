@@ -1,0 +1,13 @@
+obj
+bin
+deploy
+_ReSharper.*
+*.user
+*.resharper
+*.suo
+*.cache
+*.userprefs
+*.pidb
+~$*
+LocalTestRun.testrunconfig
+TestResults
