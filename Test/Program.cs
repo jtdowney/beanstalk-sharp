@@ -1,5 +1,4 @@
 ﻿using System.Net;
-using System.Text;
 using Beanstalk.Client;
 
 namespace Beanstalk.Test
@@ -8,8 +7,10 @@ namespace Beanstalk.Test
     {
         static void Main(string[] args)
         {
-            var connection = new Connection(IPAddress.Parse("192.168.1.136"), 11300);
-            connection.Put(Encoding.ASCII.GetBytes("Hello \0from C#"));
+            using (var beanstalk = new BeanstalkConnection(IPAddress.Loopback, 11300))
+            {
+                beanstalk.Put("hello");                
+            }
         }
     }
 }
