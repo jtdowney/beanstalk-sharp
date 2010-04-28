@@ -1,7 +1,7 @@
 Overview
 ========
 
-Beanstalk-sharp is a C#/.NET client library for http://github.com/kr/beanstalkd. Currently it only implements commands to produce new messages.
+Beanstalk-sharp is a C#/.NET client library for [beanstalkd](http://github.com/kr/beanstalkd). Currently it only implements commands to produce new messages.
 
 Example:
 
